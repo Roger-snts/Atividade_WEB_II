@@ -1,96 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Cadastro</title>
 </head>
+
 <body>
-    <form>
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome">
-        
-        <label for="sobrenome">Sobrenome:</label>
-        <input type="text" name="sobrenome" id="sobrenome">
-        
-        <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email">
-        
-        <label for="telefone">DDD + Telefone:</label>
-        <input type="tel" name="telefone" id="telefone" placeholder="(xx)xxxxx-xxxx">
-        
-        <label for="cidade">Cidade:</label>
-        <input type="text" name="cidade" id="cidade">
+    <article id="principal">
+        <form>
+            <article>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Ex: Alaila Meireles">
+                <br>
 
-        <label for="estado">Estado:</label>
-        <select name="estados" id="estado">
-            <option value="nulo">Selecione</option>
-            <option value="Acre">Acre</option>
-            <option value="Alagoas">Alagoas</option>
-            <option value="Amapá">Amapá</option>
-            <option value="Amazonas">Amazonas</option>
-            <option value="Bahia">Bahia</option>
-            <option value="Ceará">Ceará</option>
-            <option value="EspíritoSanto">Espírito Santo</option>
-            <option value="Goiás">Goiás</option>
-            <option value="Maranhão">Maranhão</option>
-            <option value="MatoGrosso">Mato Grosso</option>
-            <option value="MatoGrossodoSul">Mato Grosso do Sul</option>
-            <option value="MinasGerais">Minas Gerais</option>
-            <option value="Pará">Pará</option>
-            <option value="Paraíba">Paraíba</option>
-            <option value="Paraná">Paraná</option>
-            <option value="Pernambuco">Pernambuco</option>
-            <option value="Piauí">Piauí</option>
-            <option value="RiodeJaneiro">Rio de Janeiro</option>
-            <option value="RioGrandedoNorte">Rio Grande do Norte</option>
-            <option value="RioGrandedoSul">Rio Grande do Sul</option>
-            <option value="Rondônia">Rondônia</option>
-            <option value="Roraima">Roraima</option>
-            <option value="SantaCatarina">Santa Catarina</option>
-            <option value="SãoPaulo">São Paulo</option>
-            <option value="Sergipe">Sergipe</option>
-            <option value="Tocantins">Tocantins</option>
-        </select>
-    </form>
-    <h3>Quais ofertas você gostaria de receber?</h3>
-    <hr>
-    <ul>
-        <input type="checkbox" name="produto1" id="produto1">
-        <label for="produto1"><img src="https://m.media-amazon.com/images/I/41AB-Vs7orL._AC_UF226,226_FMjpg_.jpg" alt="" width="170px" height="150px"></label>
-        <p>Earphones</p>
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Ex: Santos">
+                <br>
 
-        <input type="checkbox" name="produto2" id="produto2">
-        <label for="produto2"><img src="https://m.media-amazon.com/images/I/31j7TycyVZL._AC_UF226,226_FMjpg_.jpg" alt="" width="170px" height="150px"></label>
-        <p>Câmera</p>
+                <div id="um">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Ex: alailameirelessantos@gmail.com">
+                    <br>
 
-        <input type="checkbox" name="produto3" id="produto3">
-        <label for="produto3"><img src="https://m.media-amazon.com/images/I/21HSfWdSlqL._AC_UF226,226_FMjpg_.jpg" alt="" width="170px" height="150px"></label>
-        <p>Fones</p>
+                    <label for="telefone">DDD + Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(xx)xxxxx-xxxx" maxlength="11">
+                </div>
 
-        <input type="checkbox" name="produto4" id="produto4">
-        <label for="produto4"><img src="https://images-na.ssl-images-amazon.com/images/I/41NE+SWUmVL._AC_SX184_.jpg" alt="" width="170px" height="150px"></label>
-        <p>Monitor</p>
+                <div id="dois">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" placeholder="Ex: Ji-Paraná">
+                    <br>
+                    
+                    <label for="estado">Estado:</label>
+                    <select name="estados" id="estado">
+                        <option value="nulo">Selecione</option>
+                        <option value="Acre">Acre</option>
+                        <option value="Alagoas">Alagoas</option>
+                        <option value="Amapá">Amapá</option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Bahia">Bahia</option>
+                        <option value="Ceará">Ceará</option>
+                        <option value="EspíritoSanto">Espírito Santo</option>
+                        <option value="Goiás">Goiás</option>
+                        <option value="Maranhão">Maranhão</option>
+                        <option value="MatoGrosso">Mato Grosso</option>
+                        <option value="MatoGrossodoSul">Mato Grosso do Sul</option>
+                        <option value="MinasGerais">Minas Gerais</option>
+                        <option value="Pará">Pará</option>
+                        <option value="Paraíba">Paraíba</option>
+                        <option value="Paraná">Paraná</option>
+                        <option value="Pernambuco">Pernambuco</option>
+                        <option value="Piauí">Piauí</option>
+                        <option value="RiodeJaneiro">Rio de Janeiro</option>
+                        <option value="RioGrandedoNorte">Rio Grande do Norte</option>
+                        <option value="RioGrandedoSul">Rio Grande do Sul</option>
+                        <option value="Rondônia">Rondônia</option>
+                        <option value="Roraima">Roraima</option>
+                        <option value="SantaCatarina">Santa Catarina</option>
+                        <option value="SãoPaulo">São Paulo</option>
+                        <option value="Sergipe">Sergipe</option>
+                        <option value="Tocantins">Tocantins</option>
+                    </select>
+                </div>
+            </article>
 
-        <input type="checkbox" name="produto5" id="produto5">
-        <label for="produto5"><img src="https://images-na.ssl-images-amazon.com/images/I/31wNMATD32L._AC_SX184_.jpg" alt="" width="170px" height="150px"></label>
-        <p>Controle c/ pendrive</p>
-        
-        <input type="checkbox" name="produto6" id="produto6">
-        <label for="produto6"><img src="https://images-na.ssl-images-amazon.com/images/I/319JJoQewCL._AC_SX184_.jpg" alt="" width="170px" height="150px"></label>
-        <p>Mouse-pad</p>
-        
-        <input type="checkbox" name="produto7" id="produto7">
-        <label for="produto7"><img src="https://images-na.ssl-images-amazon.com/images/I/31I5mc9VGGL._AC_SX184_.jpg" alt="" width="170px" height="150px"></label>
-        <p>Impressora de sonhos</p>
-        
-        <input type="checkbox" name="produto8" id="produto8">
-        <label for="produto8"><img src="https://images-na.ssl-images-amazon.com/images/I/41bH-ZmmFyL._AC_SX184_.jpg" alt="" width="170px" height="150px"></label>
-        <p>Poxo C9</p>
-    </ul>
+            <br>
+        </form>
+        <h2>Quais ofertas você gostaria de receber?</h2>
+        <br>
+        <hr>
+        <ul>
+            <li>
+                <label for="produto1"><img
+                        src="https://m.media-amazon.com/images/I/41AB-Vs7orL._AC_UF226,226_FMjpg_.jpg" alt=""
+                        width="140px" height="120px"></label>
+                <p>Earphones</p>
+                <input type="checkbox" name="produto1" id="produto1">
+            </li>
 
-    <button type="reset">Limpar dados</button>
-    <button type="submit">Confirmar cadastro</button>
+            <li>
+                <label for="produto2"><img
+                        src="https://m.media-amazon.com/images/I/31j7TycyVZL._AC_UF226,226_FMjpg_.jpg" alt=""
+                        width="140px" height="120px"></label>
+                <p>Câmera</p>
+                <input type="checkbox" name="produto2" id="produto2">
+            </li>
+
+            <li>
+                <label for="produto3"><img
+                        src="https://m.media-amazon.com/images/I/21HSfWdSlqL._AC_UF226,226_FMjpg_.jpg" alt=""
+                        width="140px" height="120px"></label>
+                <p>Fones</p>
+                <input type="checkbox" name="produto3" id="produto3">
+            </li>
+
+            <li>
+                <label for="produto4"><img
+                        src="https://images-na.ssl-images-amazon.com/images/I/41NE+SWUmVL._AC_SX184_.jpg" alt=""
+                        width="140px" height="120px"></label>
+                <p>Monitor</p>
+                <input type="checkbox" name="produto4" id="produto4">
+            </li>
+
+            <li>
+                <label for="produto5"><img
+                        src="https://images-na.ssl-images-amazon.com/images/I/31wNMATD32L._AC_SX184_.jpg" alt=""
+                        width="140px" height="120px"></label>
+                <p>Controle c/ pendrive</p>
+                <input type="checkbox" name="produto5" id="produto5">
+            </li>
+
+            <li>
+                <label for="produto6"><img
+                        src="https://images-na.ssl-images-amazon.com/images/I/319JJoQewCL._AC_SX184_.jpg" alt=""
+                        width="140px" height="120px"></label>
+                <p>Mouse-pad</p>
+                <input type="checkbox" name="produto6" id="produto6">
+            </li>
+
+            <li>
+                <label for="produto7"><img
+                        src="https://images-na.ssl-images-amazon.com/images/I/31I5mc9VGGL._AC_SX184_.jpg" alt=""
+                        width="140px" height="120px"></label>
+                <p>Impressora de sonhos</p>
+                <input type="checkbox" name="produto7" id="produto7">
+            </li>
+
+            <li>
+                <label for="produto8"><img
+                        src="https://images-na.ssl-images-amazon.com/images/I/41bH-ZmmFyL._AC_SX184_.jpg" alt=""
+                        width="140px" height="120px"></label>
+                <p>Poxo C9</p>
+                <input type="checkbox" name="produto8" id="produto8">
+            </li>
+        </ul>
+
+        <button id="um" type="reset">Limpar dados</button>
+        <button id="dois" type="submit">Confirmar cadastro</button>
+    </article>
 </body>
+
 </html>

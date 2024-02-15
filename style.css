@@ -1,0 +1,101 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    margin: 10px 10%;
+    background-color: beige;
+
+    & article#principal {
+        background-color: #81afdae8;
+        box-shadow: 2px 2px 8px #49494c;
+        margin: 10px 15%;
+        padding: 5%;
+        border-radius: 40px;
+
+        & form {
+
+            & article {
+                padding: auto;
+                margin: auto;
+                display: flow-root;
+
+                & div#um {
+                    padding: 0%;
+                    margin: 0%;
+                    width: 70%;
+                    display: inline-block;
+                }
+
+                & div#dois {
+                    padding: 0%;
+                    margin: 0%;
+                    width: 29%;
+                    display: inline-block;
+                }
+
+                & label {
+                    font-size: larger;
+                }
+
+                & input {
+                    display: flex;
+                    width: 99%;
+                    position: relative;
+                    border-radius: 10px;
+                    height: 30px;
+                    text-indent: 15px;
+                    font-size: medium;
+                }
+
+                & select {
+                    display: flex;
+                    width: 100%;
+                    position: relative;
+                    border-radius: 10px;
+                    height: 30px;
+                    text-indent: 15px;
+                    font-size: medium;
+                }
+            }
+        }
+
+        & ul {
+            text-align: center;
+            
+            & li {
+                margin: 1%;
+                padding: 1%;
+                width: 20%;
+                display: inline-block;
+
+                & p {
+                    text-align: center;
+                    margin-top: 0%;
+                    padding: 0%;
+                }
+
+                & input {
+                    margin-left: 90%;
+                }
+            }
+        }
+
+
+        & button#um {
+            background-color: #fffffff0;
+            padding: 15px;
+            border-radius: 26px;
+            width: 28%;
+        }
+
+        & button#dois {
+            background-color: #c0eecde0;
+            padding: 15px;
+            border-radius: 26px;
+            width: 70%;
+        }
+    }
+}
